@@ -1,0 +1,3 @@
+SELECT basket_date, SUM(basket_count) AS Daily_Sales 
+FROM basket_details 
+GROUP BY basket_date;

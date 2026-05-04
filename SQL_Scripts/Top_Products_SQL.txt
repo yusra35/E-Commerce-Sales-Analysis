@@ -1,0 +1,5 @@
+SELECT product_id, SUM(basket_count) AS Total_Sold 
+FROM basket_details 
+GROUP BY product_id 
+ORDER BY Total_Sold DESC 
+LIMIT 10;
